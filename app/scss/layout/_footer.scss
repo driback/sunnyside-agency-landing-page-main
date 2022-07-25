@@ -1,0 +1,61 @@
+@use "../util/" as u;
+
+.footer {
+  width: 100%;
+  padding: 5rem 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(168, 34%, 70%);
+
+  > * {
+    margin-inline: auto;
+  }
+
+  &__logo {
+    display: block;
+    transform: scale(1.5);
+    cursor: pointer;
+    fill: #2c7566;
+  }
+
+  &__nav {
+    display: inherit;
+    justify-content: center;
+    margin-top: 4rem;
+    gap: 3rem;
+
+    a {
+      color: u.$p-darkmocyan;
+
+      &:hover {
+        color: u.$n-white;
+      }
+    }
+  }
+
+  &__sosmed {
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+    gap: 1.75rem;
+    margin-top: 6rem;
+  }
+
+  &__svg {
+    position: relative;
+
+    > svg {
+      display: block;
+      position: relative;
+      cursor: pointer;
+      fill: #2c7566;
+
+      &:hover {
+        fill: u.$n-white;
+      }
+    }
+  }
+}
